@@ -17,8 +17,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:label="About Me"
-            android:name=".AboutMe" />
+            android:name=".AboutMeActivity"
+            android:label="About Me" />
+        <activity android:name=".ColorsActivity"
+            android:label="Colors"/>
     </application>
 
 </manifest>

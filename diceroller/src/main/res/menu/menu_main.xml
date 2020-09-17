@@ -3,4 +3,7 @@
 
     <item android:id="@+id/menu_about_me"
         android:title="About Me" />
+
+    <item android:id="@+id/menu_colors"
+        android:title="Colors" />
 </menu>

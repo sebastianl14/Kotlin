@@ -3,13 +3,10 @@ package com.example.diceroller
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageView
-import android.widget.TextView
-import android.widget.Toast
 import kotlin.random.Random
 
 class MainActivity : AppCompatActivity() {
@@ -54,8 +51,11 @@ class MainActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         when (item.itemId){
             R.id.menu_about_me -> {
-                val intent = Intent(this, AboutMe::class.java)
+                val intent = Intent(this, AboutMeActivity::class.java)
                 startActivity(intent)
+            }
+            R.id.menu_colors -> {
+                startActivity(Intent(this, ColorsActivity::class.java))
             }
         }
         return super.onOptionsItemSelected(item)
